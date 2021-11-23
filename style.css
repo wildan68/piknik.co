@@ -149,12 +149,18 @@ button {
     background-color: var(--biru-muda);
     width: 250px;
     margin-right: 5%;
-    transition: all 0.5s linear;
+    background-position: center;
+    transition: background 0.8s;
 }
 
 .left-caption .button-container a.btn-discover:hover {
+    background: #47b8d1 radial-gradient(circle, transparent 1%, #47b8d1 1%) center/15000%;
+}
+
+.left-caption .button-container a.btn-discover:active {
     background-color: #38a6be;
-    transition: all 0.5s linear;
+    background-size: 100%;
+    transition: background 0s;
 }
 
 .left-caption .data-container {
@@ -253,6 +259,7 @@ button {
     border: 2px solid var(--ungu);
     background-color: #f9f9f956;
     cursor: pointer;
+    box-shadow: 0 0 4px #999;
 }
 
 .right .button-frame .register {
