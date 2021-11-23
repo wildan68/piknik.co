@@ -38,6 +38,8 @@ button {
     flex: 1;
     background-color: var(--hitam);
     height: 100%;
+    object-fit: cover;
+    overflow: hidden;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -186,6 +188,7 @@ button {
 
 .right img {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -208,8 +211,13 @@ button {
     font-size: 18px;
     color: var(--abuabu);
     border: 1px solid var(--putih);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
+
+/*
 .right .trip-info:before {
     content: "";
     position: absolute;
@@ -223,6 +231,7 @@ button {
     filter: blur(100px);
     margin: -20px;
 }
+*/
 
 .right .trip-info .trip-head-font {
     font-size: 28px;
