@@ -31,7 +31,7 @@ button {
 .home {
     display: flex;
     width: 100%;
-    height: 60em;
+    height: 55em;
 }
 
 .home .left {
@@ -207,6 +207,7 @@ button {
     font-family: 'Exo', sans-serif;
     padding-top: 1em;
     padding-left: 2em;
+    padding-right: 2em;
     font-weight: 400;
     font-size: 18px;
     color: var(--abuabu);
@@ -274,4 +275,42 @@ button {
 .right .button-frame .register {
     background-color: var(--ungu);
     color: var(--putih);
+}
+
+@media (max-width: 768px) {
+    .home {
+        display: block;
+        height: 50em;
+    }
+    .home .left .left-caption {
+        padding-left: 2%;
+        justify-content: space-around;
+        padding-right: 5%;
+    }
+    .left-caption .head-caption {
+        width: 100%;
+        font-size: 38px;
+    }
+    .left-caption .sub-caption {
+        width: 100%;
+        font-size: 18px;
+    }
+    .left-caption .button-container {
+        display: grid;
+        justify-content: space-around;
+    }
+    .left-caption .button-container a {
+        width: auto;
+        height: 5em;
+        width: 100%;
+    }
+    .left-caption .data-container {
+        margin-top: 30%;
+    }
+    .left-caption .data-container .data {
+        font-size: 18px;
+    }
+    .left-caption .data-container .data .data-head-font {
+        font-size: 24px;
+    }
 }
